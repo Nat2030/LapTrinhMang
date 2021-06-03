@@ -1,5 +1,4 @@
-﻿
-namespace LAB4
+﻿namespace LAB4
 {
     partial class BAI4
     {
@@ -30,87 +29,109 @@ namespace LAB4
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BAI4));
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.backward = new System.Windows.Forms.ToolStripButton();
+            this.forward = new System.Windows.Forms.ToolStripButton();
+            this.reload = new System.Windows.Forms.ToolStripButton();
+            this.LocationBar = new System.Windows.Forms.ToolStripComboBox();
+            this.viewSource = new System.Windows.Forms.ToolStripButton();
+            this.downPage = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.home = new System.Windows.Forms.ToolStripButton();
+            this.search = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // toolStripButton3
+            // backward
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 25);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.backward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.backward.Image = ((System.Drawing.Image)(resources.GetObject("backward.Image")));
+            this.backward.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.backward.Name = "backward";
+            this.backward.Size = new System.Drawing.Size(29, 25);
+            this.backward.Text = "Go back one page";
             // 
-            // toolStripButton4
+            // forward
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(29, 25);
-            this.toolStripButton4.Text = "toolStripButton4";
+            this.forward.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.forward.Image = ((System.Drawing.Image)(resources.GetObject("forward.Image")));
+            this.forward.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.forward.Name = "forward";
+            this.forward.Size = new System.Drawing.Size(29, 25);
+            this.forward.Text = "Go forward one page";
             // 
-            // toolStripButton5
+            // reload
             // 
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(29, 25);
-            this.toolStripButton5.Text = "toolStripButton5";
+            this.reload.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.reload.Image = ((System.Drawing.Image)(resources.GetObject("reload.Image")));
+            this.reload.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.reload.Name = "reload";
+            this.reload.Size = new System.Drawing.Size(29, 25);
+            this.reload.Text = "Reload current page";
             // 
-            // toolStripComboBox1
+            // LocationBar
             // 
-            this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(800, 28);
+            this.LocationBar.Name = "LocationBar";
+            this.LocationBar.Size = new System.Drawing.Size(800, 28);
             // 
-            // toolStripButton1
+            // viewSource
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 25);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.viewSource.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.viewSource.Image = ((System.Drawing.Image)(resources.GetObject("viewSource.Image")));
+            this.viewSource.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.viewSource.Name = "viewSource";
+            this.viewSource.Size = new System.Drawing.Size(29, 25);
+            this.viewSource.Text = "View Source";
             // 
-            // toolStripButton2
+            // downPage
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(29, 25);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.downPage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.downPage.Image = ((System.Drawing.Image)(resources.GetObject("downPage.Image")));
+            this.downPage.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.downPage.Name = "downPage";
+            this.downPage.Size = new System.Drawing.Size(29, 25);
+            this.downPage.Text = "Download HTML source";
             // 
             // toolStrip1
             // 
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripButton5,
-            this.toolStripComboBox1,
-            this.toolStripButton1,
-            this.toolStripButton2});
+            this.backward,
+            this.forward,
+            this.home,
+            this.reload,
+            this.LocationBar,
+            this.search,
+            this.viewSource,
+            this.downPage});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1081, 28);
+            this.toolStrip1.Size = new System.Drawing.Size(1250, 28);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // home
+            // 
+            this.home.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
+            this.home.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.home.Name = "home";
+            this.home.Size = new System.Drawing.Size(29, 25);
+            this.home.Text = "Home Page";
+            // 
+            // search
+            // 
+            this.search.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.search.Image = ((System.Drawing.Image)(resources.GetObject("search.Image")));
+            this.search.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(29, 25);
+            this.search.Text = "Go to the address in the Location Bar";
             // 
             // BAI4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1081, 586);
+            this.ClientSize = new System.Drawing.Size(1250, 586);
             this.Controls.Add(this.toolStrip1);
             this.Name = "BAI4";
             this.Text = "Web Browser";
@@ -123,12 +144,14 @@ namespace LAB4
 
         #endregion
 
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton5;
-        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton backward;
+        private System.Windows.Forms.ToolStripButton forward;
+        private System.Windows.Forms.ToolStripButton reload;
+        private System.Windows.Forms.ToolStripComboBox LocationBar;
+        private System.Windows.Forms.ToolStripButton viewSource;
+        private System.Windows.Forms.ToolStripButton downPage;
         private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton home;
+        private System.Windows.Forms.ToolStripButton search;
     }
 }

@@ -30,9 +30,9 @@ namespace LAB4
         private void InitializeComponent()
         {
             this.btnPost = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.URL = new System.Windows.Forms.TextBox();
+            this.dataBox = new System.Windows.Forms.TextBox();
+            this.HTMLcontent = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnPost
@@ -45,41 +45,46 @@ namespace LAB4
             this.btnPost.TabIndex = 0;
             this.btnPost.Text = "POST";
             this.btnPost.UseVisualStyleBackColor = false;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
             // 
-            // textBox1
+            // URL
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 26);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(552, 34);
-            this.textBox1.TabIndex = 1;
+            this.URL.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.URL.Location = new System.Drawing.Point(28, 26);
+            this.URL.Multiline = true;
+            this.URL.Name = "URL";
+            this.URL.Size = new System.Drawing.Size(552, 34);
+            this.URL.TabIndex = 1;
             // 
-            // textBox2
+            // dataBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(28, 86);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(552, 34);
-            this.textBox2.TabIndex = 2;
+            this.dataBox.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataBox.Location = new System.Drawing.Point(28, 86);
+            this.dataBox.Multiline = true;
+            this.dataBox.Name = "dataBox";
+            this.dataBox.Size = new System.Drawing.Size(552, 34);
+            this.dataBox.TabIndex = 2;
             // 
-            // textBox3
+            // HTMLcontent
             // 
-            this.textBox3.BackColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(27, 147);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(748, 315);
-            this.textBox3.TabIndex = 3;
+            this.HTMLcontent.BackColor = System.Drawing.Color.White;
+            this.HTMLcontent.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HTMLcontent.Location = new System.Drawing.Point(27, 147);
+            this.HTMLcontent.Multiline = true;
+            this.HTMLcontent.Name = "HTMLcontent";
+            this.HTMLcontent.ReadOnly = true;
+            this.HTMLcontent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.HTMLcontent.Size = new System.Drawing.Size(748, 315);
+            this.HTMLcontent.TabIndex = 3;
             // 
             // BAI2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 479);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.HTMLcontent);
+            this.Controls.Add(this.dataBox);
+            this.Controls.Add(this.URL);
             this.Controls.Add(this.btnPost);
             this.Name = "BAI2";
             this.Text = "BAI2";
@@ -91,8 +96,8 @@ namespace LAB4
         #endregion
 
         private System.Windows.Forms.Button btnPost;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox URL;
+        private System.Windows.Forms.TextBox dataBox;
+        private System.Windows.Forms.TextBox HTMLcontent;
     }
 }
