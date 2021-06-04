@@ -38,6 +38,7 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.home = new System.Windows.Forms.ToolStripButton();
             this.search = new System.Windows.Forms.ToolStripButton();
+            this.myBrowser = new System.Windows.Forms.WebBrowser();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.backward.Image = ((System.Drawing.Image)(resources.GetObject("backward.Image")));
             this.backward.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.backward.Name = "backward";
-            this.backward.Size = new System.Drawing.Size(29, 25);
+            this.backward.Size = new System.Drawing.Size(29, 28);
             this.backward.Text = "Go back one page";
             // 
             // forward
@@ -56,7 +57,7 @@
             this.forward.Image = ((System.Drawing.Image)(resources.GetObject("forward.Image")));
             this.forward.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.forward.Name = "forward";
-            this.forward.Size = new System.Drawing.Size(29, 25);
+            this.forward.Size = new System.Drawing.Size(29, 28);
             this.forward.Text = "Go forward one page";
             // 
             // reload
@@ -65,13 +66,13 @@
             this.reload.Image = ((System.Drawing.Image)(resources.GetObject("reload.Image")));
             this.reload.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.reload.Name = "reload";
-            this.reload.Size = new System.Drawing.Size(29, 25);
+            this.reload.Size = new System.Drawing.Size(29, 28);
             this.reload.Text = "Reload current page";
             // 
             // LocationBar
             // 
             this.LocationBar.Name = "LocationBar";
-            this.LocationBar.Size = new System.Drawing.Size(800, 28);
+            this.LocationBar.Size = new System.Drawing.Size(800, 31);
             // 
             // viewSource
             // 
@@ -79,8 +80,9 @@
             this.viewSource.Image = ((System.Drawing.Image)(resources.GetObject("viewSource.Image")));
             this.viewSource.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.viewSource.Name = "viewSource";
-            this.viewSource.Size = new System.Drawing.Size(29, 25);
+            this.viewSource.Size = new System.Drawing.Size(29, 28);
             this.viewSource.Text = "View Source";
+            this.viewSource.Click += new System.EventHandler(this.viewSource_Click);
             // 
             // downPage
             // 
@@ -88,8 +90,9 @@
             this.downPage.Image = ((System.Drawing.Image)(resources.GetObject("downPage.Image")));
             this.downPage.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.downPage.Name = "downPage";
-            this.downPage.Size = new System.Drawing.Size(29, 25);
+            this.downPage.Size = new System.Drawing.Size(29, 28);
             this.downPage.Text = "Download HTML source";
+            this.downPage.Click += new System.EventHandler(this.downPage_Click);
             // 
             // toolStrip1
             // 
@@ -105,7 +108,7 @@
             this.downPage});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1250, 28);
+            this.toolStrip1.Size = new System.Drawing.Size(1250, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -115,7 +118,7 @@
             this.home.Image = ((System.Drawing.Image)(resources.GetObject("home.Image")));
             this.home.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.home.Name = "home";
-            this.home.Size = new System.Drawing.Size(29, 25);
+            this.home.Size = new System.Drawing.Size(29, 28);
             this.home.Text = "Home Page";
             // 
             // search
@@ -124,14 +127,25 @@
             this.search.Image = ((System.Drawing.Image)(resources.GetObject("search.Image")));
             this.search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(29, 25);
+            this.search.Size = new System.Drawing.Size(29, 28);
             this.search.Text = "Go to the address in the Location Bar";
+            this.search.Click += new System.EventHandler(this.search_Click);
+            // 
+            // myBrowser
+            // 
+            this.myBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.myBrowser.Location = new System.Drawing.Point(0, 31);
+            this.myBrowser.MinimumSize = new System.Drawing.Size(20, 20);
+            this.myBrowser.Name = "myBrowser";
+            this.myBrowser.Size = new System.Drawing.Size(1250, 555);
+            this.myBrowser.TabIndex = 1;
             // 
             // BAI4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1250, 586);
+            this.Controls.Add(this.myBrowser);
             this.Controls.Add(this.toolStrip1);
             this.Name = "BAI4";
             this.Text = "Web Browser";
@@ -153,5 +167,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton home;
         private System.Windows.Forms.ToolStripButton search;
+        private System.Windows.Forms.WebBrowser myBrowser;
     }
 }

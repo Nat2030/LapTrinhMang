@@ -10,3 +10,8 @@ C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\obj\Debug\LAB4.csproj.CoreCompileIn
 C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\obj\Debug\LAB4.exe
 C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\obj\Debug\LAB4.pdb
 C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\obj\Debug\LAB4.BAI4.resources
+C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\obj\Debug\LAB4.ViewSourcePage.resources
+C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\obj\Debug\LAB4.csproj.CopyComplete
+C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\bin\Debug\HtmlAgilityPack.dll
+C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\bin\Debug\HtmlAgilityPack.pdb
+C:\NetworkProgramming\LapTrinhMang\LAB4\LAB4\bin\Debug\HtmlAgilityPack.xml
